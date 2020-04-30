@@ -473,11 +473,6 @@ section:last-child {
   box-sizing: border-box;
 }
 
-body {
-  background-color: #ffffff;
-  font-family: Helvetica, sans-serif;
-}
-
 /* The actual timeline (the vertical ruler) */
 .timeline {
   position: relative;
