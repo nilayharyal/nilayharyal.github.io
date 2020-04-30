@@ -12,6 +12,14 @@
       src="http://code.jquery.com/jquery-latest.min.js"
       type="text/javascript"
     ></script>
+
+    <style>
+      .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+      }
+    </style>
     <script src="script.js"></script>
 
     <link rel="stylesheet" href="menubar.css" />
@@ -61,18 +69,21 @@
           </ul>
         </div>
         <div class="clear"></div>
-        <div id="cssmenu">
-          <ul>
-            <li class="active"><a href="#aboutMe">About Me</a></li>
-            <li><a href="#technicalSkills">Technical Skills</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#workExperience">Work Experience</a></li>
-            <li><a href="#academicProject">Academic Projects</a></li>
-          </ul>
-        </div>
       </div>
 
-      <div id="mainArea" class="quickFade delayFive">
+      <div id="cssmenu">
+        <ul>
+          <li class="active">
+            <a href="#aboutMe">About Me</a>
+          </li>
+          <li><a href="#technicalSkills">Technical Skills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#workExperience">Work Experience</a></li>
+          <li><a href="#academicProject">Academic Projects</a></li>
+        </ul>
+      </div>
+
+      <div id="mainArea" class="mainArea">
         <section>
           <article>
             <div id="aboutMe" class="sectionTitle">
@@ -287,6 +298,24 @@
         </section>
       </div>
     </div>
+
+    <script type="text/javascript">
+      window.onscroll = function() {
+        myFunction();
+      };
+
+      var header = document.getElementById("cssmenu");
+      var sticky = header.offsetTop;
+
+      function myFunction() {
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky");
+        } else {
+          header.classList.remove("sticky");
+        }
+      }
+    </script>
+
     <script type="text/javascript">
       var gaJsHost =
         "https:" == document.location.protocol ? "https://ssl." : "http://www.";
