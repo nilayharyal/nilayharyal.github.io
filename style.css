@@ -90,6 +90,10 @@ section {
 }
 
 html,
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background: #add8e6;
   font-family: "Lato", helvetica, arial, sans-serif;
