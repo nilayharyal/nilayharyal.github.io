@@ -29,12 +29,12 @@
 }
 #cssmenu {
   width: auto;
-  border: 3px solid #cf8a05;
+  border: 3px solid #3b5998;
   border-radius: 3px;
   font-family: "Oswald", sans-serif;
   line-height: 1;
   background: #f7f7f7;
-  box-shadow: 1px 1px 0 #cf8a05, 2px 2px 0 #cf8a05,
+  box-shadow: 1px 1px 0 #3b5998, 2px 2px 0 #3b5998,
     3px 3px 3px rgba(0, 0, 0, 0.35);
 }
 #cssmenu > ul {
@@ -59,7 +59,7 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #cf8a05;
+  color: #3b5998;
   -webkit-transition: all 0.2s ease;
   -moz-transition: all 0.2s ease;
   -ms-transition: all 0.2s ease;
@@ -78,7 +78,7 @@
   height: 0;
   width: 0;
   border: 5px solid transparent;
-  border-bottom-color: #cf8a05;
+  border-bottom-color: #3b5998;
   -webkit-transition: all 0.25s ease-out;
   -moz-transition: all 0.25s ease-out;
   -ms-transition: all 0.25s ease-out;
@@ -113,7 +113,7 @@
   font-size: 14px;
   text-transform: uppercase;
   text-decoration: none;
-  color: #cf8a05;
+  color: #3b5998;
   background: url("images/bg.png");
 }
 #cssmenu.small-screen #menu-button.menu-opened {
@@ -128,8 +128,8 @@
   -webkit-box-sizing: content-box;
   -moz-box-sizing: content-box;
   box-sizing: content-box;
-  border-top: 2px solid #cf8a05;
-  border-bottom: 2px solid #cf8a05;
+  border-top: 2px solid #3b5998;
+  border-bottom: 2px solid #3b5998;
   width: 18px;
   height: 3px;
 }
@@ -145,7 +145,7 @@
   display: block;
   width: 18px;
   height: 2px;
-  background: #cf8a05;
+  background: #3b5998;
 }
 #cssmenu.small-screen #menu-button.menu-opened:before {
   background: #444444;
