@@ -81,6 +81,7 @@
           <li><a href="#education">Education</a></li>
           <li><a href="#workExperience">Work Experience</a></li>
           <li><a href="#academicProject">Academic Projects</a></li>
+          <li><a href="#recommendations">Recommendations</a></li>
         </ul>
       </div>
 
@@ -398,6 +399,42 @@
           </div>
           <div class="clear"></div>
         </section>
+
+
+        <section>
+                <article>
+                  <div id="recommendations" class="sectionTitle">
+                    <br /><br /><br /><br />
+                    <h1>RECOMMENDATIONS</h1>
+                  </div>
+                  <br /><br /><br /><br />
+                  <div class="sectionContent">
+                    <table>
+                     <tr>
+                         <td style="padding:10px"><a href="https://www.linkedin.com/in/carrieklaphake/"><img src="/CarrieKlaphake.png"></a></td>
+                         <td style="padding:10px">
+                               <p> Poised, professional, and personable are adjectives I'd use to describe Nilay. Since meeting Nilay at Northeastern, he has demonstrated professionalism and capitalized on his years of experience as a Software Engineer and Java Developer.
+                                        Nilay recently presented to my class of 55 students.<span id="dots">...</span><span id="more"> He went above and beyond with the slide deck he prepared and delivered it in the most compelling way!
+                                                I highly recommend Nilay to any company as he continues to go above and beyond in his career endeavors!</span>
+                                <button onclick="readFunction()" id="myBtn">Read more</button> </p>
+                            </td>
+                     </tr>
+                     <tr>
+                            <td style="padding:10px"><a href="https://www.linkedin.com/in/nikhilchitloor/"><img src="/NikhilChitloor.png"></a></td>
+                            <td style="padding:10px">
+                                    <p> I have known Nilay from the time he started working at Accenture. He was hired for supporting the Barclays Wealth team as a fresher. Within a short span of time, with his positive attitude he demonstrated good leadership skills, process improvements, automation and was promoted as a Team Leader.
+                                    On completion of this assignment we hired him again .<span id="dots2">...</span><span id="more2"> to build the IBM Delivery centre for Private and Corporate banking where he was instrumental in training new joiners and stabilizing the operation.
+                                    Nilay has good technical skills and good leadership skills and has a great can do attitude which is very important to be flexible and adaptable while working with teams having varied culture.
+                                    I recommend Nilay and thank him for his contribution and will be happy to employ him again in my team</span>
+                                    <button onclick="readFunction2()" id="myBtn2">Read more</button> </p>
+                                </td>
+                        </tr>
+                    </table>
+                  </div>
+                </article>
+                <div class="clear"></div>
+              </section>
+
       </div>
     </div>
 
@@ -417,6 +454,40 @@
         }
       }
     </script>
+
+<script type="text/javascript">
+function readFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+
+  function readFunction2() {
+    var dots = document.getElementById("dots2");
+    var moreText = document.getElementById("more2");
+    var btnText = document.getElementById("myBtn2");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more";
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less";
+      moreText.style.display = "inline";
+    }
+  }
+</script>
 
     <script type="text/javascript">
       var gaJsHost =

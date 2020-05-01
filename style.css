@@ -661,3 +661,20 @@ section:last-child {
   background-color: white;
   overflow: hidden;
 }
+
+#more {
+  display: none;
+}
+#more2 {
+  display: none;
+}
+
+button {
+  background: none !important;
+  border: none;
+  padding: 0 !important;
+  font-family: "Lato", helvetica, arial, sans-serif;
+  font-size: 18px;
+  color: #3b5998;
+  cursor: pointer;
+}
