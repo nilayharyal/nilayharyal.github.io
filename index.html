@@ -231,38 +231,30 @@
             <h1>WORK EXPERIENCE</h1>
           </div>
           <br /><br /><br /><br />
-          <div class="sectionContent">
-            <article>
-              <h2>Affirmed Networks, Acton,MA,USA</h2>
-              <p class="subDetails">May 2019-December 2019</p>
-              <p>
-                • Developed a sizing and Monitoring tool in Grafana. Required
-                metrics were exposed using Prometheus, custom designed in
-                Golang. Metrics were pulled from LINUX system using custom java
-                code, shell scripts and SQL scripts.
-              </p>
-            </article>
+          <button class="accordion">Affirmed Networks, Acton,MA,USA (May 2019-December 2019)</button>
+<div class="panel">
+  <p>• Developed a sizing and Monitoring tool in Grafana. Required
+        metrics were exposed using Prometheus, custom designed in
+        Golang. Metrics were pulled from LINUX system using custom java
+        code, shell scripts and SQL scripts.</p>
+</div>
 
-            <article>
-              <h2>IBM, India</h2>
-              <p class="subDetails">June 2016-July 2018</p>
-              <p>
-                • Played role of migration lead of Flexcube from FCR/FCC to UBS
-                for UAE and India providing code fixes for showstopper issues in
-                Oracle Database <br />• Devised a universal banking tool using
-                Visual Basic, VB Script and Task Scheduler as backend and HTML
-                and Java Script as front end. The tool reduced 15% of project
-                work and reduced 2 FTE (Full time equivalent) of client cost<br />
-                • Mentored a team of 22 engineers as transition Lead and Subject
-                matter expert during transition phase from previous vendor of
-                client to IBM
-              </p>
-            </article>
+<button class="accordion">IBM, India (June 2016-July 2018)</button>
+<div class="panel">
+  <p>• Played role of migration lead of Flexcube from FCR/FCC to UBS
+        for UAE and India providing code fixes for showstopper issues in
+        Oracle Database <br />• Devised a universal banking tool using
+        Visual Basic, VB Script and Task Scheduler as backend and HTML
+        and Java Script as front end. The tool reduced 15% of project
+        work and reduced 2 FTE (Full time equivalent) of client cost<br />
+        • Mentored a team of 22 engineers as transition Lead and Subject
+        matter expert during transition phase from previous vendor of
+        client to IBM</p>
+</div>
 
-            <article>
-              <h2>ACCENTURE, India</h2>
-              <p class="subDetails">June 2012-June 2016</p>
-              <p>
+<button class="accordion">ACCENTURE, India (June 2012-June 2016)</button>
+<div class="panel">
+        <p>
                 • Built Loaders and services utilizing Oracle PL/SQL to identify
                 fraud claims and associated premium <br />• Formulated PL/SQL
                 Packages, Procedures and Functions in accordance with Business
@@ -273,8 +265,7 @@
                 smooth deployment <br />• Fixed critical defects/gaps identified
                 during code reviews for Production environment
               </p>
-            </article>
-          </div>
+            </div>
           <div class="clear"></div>
         </section>
         <section>
@@ -406,6 +397,22 @@
         )
       );
     </script>
+    <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+            
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+            </script>
     <script type="text/javascript">
       var pageTracker = _gat._getTracker("UA-3753241-1");
       pageTracker._initData();
