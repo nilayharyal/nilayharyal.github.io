@@ -661,3 +661,7 @@ section:last-child {
   background-color: white;
   overflow: hidden;
 }
+
+#more {
+  display: none;
+}
