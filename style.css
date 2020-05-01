@@ -600,7 +600,7 @@ section:last-child {
 }
 
 .container_overlay {
-  position: relative;
+  position: absolute;
   width: 100%;
 }
 
